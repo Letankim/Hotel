@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Hotel</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="banner">
+            <img src="./anh/banner.png" alt="">
+        </div>
+        <div id="main-menu">
+            <div class="btn_bars hide_on_laptop">
+                <i class='bx bx-menu'></i>
+            </div>
+            <div class="overlay hide_on_laptop"></div>
+            <ul class="menu-items">
+                <li><a href="">
+                    <i class="fas fa-home-lg hide_on_mobile"></i>
+                        Trang chủ
+                    </a>
+                </li>
+                <li>
+                    <a href="">Phòng ngủ</a>
+                    <ul class="menu-item">
+                        <li><a href="">Phòng superios</a></li>
+                        <li><a href="">Phòng deluxe</a></li>
+                        <li><a href="">Phòng suite</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Phòng hội thảo</a>
+                    <ul class="menu-item">
+                        <li><a href="">Phòng superios</a></li>
+                        <li><a href="">Phòng deluxe</a></li>
+                        <li><a href="">Phòng suite</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Nhà hàng</a>
+                    <ul class="menu-item">
+                        <li><a href="">Phòng superios</a></li>
+                        <li><a href="">Phòng deluxe</a></li>
+                        <li><a href="">Phòng suite</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Thông tin chung</a></li>
+                <li><a href="">Khuyến mãi</a></li>
+                <li><a href="">Liên hệ</a></li>
+            </ul>
+        </div>
+        <div id="menu-slide">
+            <i class="far fa-angle-left slide-pre slide_control"></i>
+            <ul class = 'slide-dots'>
+                <li class='fal fa-dot-circle slide-dots-item slideActive'></li>
+                <li class='fal fa-dot-circle slide-dots-item'></li>
+                <li class='fal fa-dot-circle slide-dots-item'></li>
+                <li class='fal fa-dot-circle slide-dots-item'></li>
+                <li class='fal fa-dot-circle slide-dots-item'></li>
+                <li class='fal fa-dot-circle slide-dots-item'></li>
+            </ul>
+            <div class="slide-wrapper">
+                <div class="slide-main">
+                    <div class="slide-item">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/d4/7a/25/iris-hotel-can-tho.jpg?w=1200&h=-1&s=1" width = '100%'/>
+                    </div>
+                    <div class="slide-item">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/d4/7a/20/iris-hotel-can-tho.jpg?w=1200&h=-1&s=1" width = '100%'/>
+                    </div>
+                    <div class="slide-item">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/d4/7a/17/iris-hotel-can-tho.jpg?w=1200&h=-1&s=1" width = '100%'/>
+                    </div>
+                    <div class="slide-item">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/4b/cf/d6/iris-hotel-can-tho.jpg?w=1200&h=-1&s=1" width = '100%'/>
+                    </div>
+                    <div class="slide-item">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/d1/20/1e/fruhstucksbuffet.jpg?w=1200&h=-1&s=1" width = '100%'/>
+                    </div>
+                    <div class="slide-item">
+                        <img src="https://condotelvietnam.com/wp-content/uploads/sites/79/2015/11/condotel-nha-trang.png" width = '100%'/>
+                    </div>
+                </div>
+            </div>
+            <i class="far fa-angle-right slide-next slide_control"></i>
+        </div>
+        <div id="menu-order">
+            <table  cellpadding = 0>
+                <caption >PHIẾU ORDER PHÒNG</caption>
+                <tr class = 'bg'>
+                    <th>Họ và tên</th>
+                    <th>Số đt</th>
+                </tr>
+                <tr>
+                   <td><input type="text" placeholder="Họ Và Tên"></td> 
+                    <td><input type="text" placeholder="Số điện thoại" required></td>
+                </tr>
+                <tr class = 'bg'>
+                    <th>Ngày đi</th>
+                    <th>Ngày về</th>
+                </tr>
+                <tr>
+                    <td ><input type="date" placeholder="Ngày đi" required></td>
+                     <td><input type="date" placeholder="Ngày về" required></td>
+                </tr>
+                <tr >
+                    <td colspan="2">
+                    <select name="" id="">
+                        <option value="Phòng superios">Phòng superios</option>
+                        <option value="Phòng deluxe">Phòng deluxe</option>
+                        <option value="Phòng suite">Phòng suite</option>
+                    </select>
+                   </td>
+                </tr> 
+                <tr>
+                    <th colspan = "2"><button>Gửi yêu cầu</button> </th>
+                </tr>       
+            </table>
+        </div>
+        <div id="cark-items">
+            <div class="cark-main">
+                <div class="lop_phu ao"></div>
+                <div class="lop_phu ao2"></div>
+                <div class="cark-header">
+                    <h2>
+                        <i class="fal fa-book"></i> - Phòng ngủ</h2>
+                </div>
+                <div class="cark-item">
+                    <div class="item">
+                        <div class="img">
+                            <a href="">
+                                <img src="https://hotel-01.web4s.vn/uploads/plugin/tour/98/1548754923-1751849194-khach-s-n-c-u-gi-y-phong-suite.png" alt="" >
+                            </a>
+                            
+                        </div>
+                        <div class="contten">
+                            <h4>Khách sạn Cầu Giấy _ Phòng Suite</h4>
+                            <p>Phòng Suite diện tích 55m2 với trang thiết bị hiện đại, phòng thiết kế đẹp mắt,trang nhã,
+                                tinh tế, không gian thoáng mát,yên tĩnh sẽ đem lại sự tiện nghi và thoải mái tối đa cho
+                                quý khách dù là thời gian nghỉ ngơi thư giãn hay trong chuyến công tác. ……</p>
+                                <div class="wapper_price">
+                                    <span class = 'sale'> Giá: 120.000.000
+                                        <i class="far fa-money-bill-wave-alt"></i>
+                                    </span>
+                                     <span class = 'non-sale'>123.000.000 
+                                        <i class="far fa-money-bill-wave-alt"></i>
+                                     </span> <br/>
+                                </div>
+                                 <button class="btn">Đặt phòng ngay</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img">
+                            <a href="">
+                                <img src="https://hotel-01.web4s.vn/uploads/plugin/tour/98/1548754923-1751849194-khach-s-n-c-u-gi-y-phong-suite.png" alt="" >
+                            </a>
+                            
+                        </div>
+                        <div class="contten">
+                            <h4>Khách sạn Cầu Giấy _ Phòng Suite</h4>
+                            <p>Phòng Suite diện tích 55m2 với trang thiết bị hiện đại, phòng thiết kế đẹp mắt,trang nhã,
+                                tinh tế, không gian thoáng mát,yên tĩnh sẽ đem lại sự tiện nghi và thoải mái tối đa cho
+                                quý khách dù là thời gian nghỉ ngơi thư giãn hay trong chuyến công tác. ……</p>
+                                <div class="wapper_price">
+                                    <span class = 'sale'> Giá: 120.000.000
+                                        <i class="far fa-money-bill-wave-alt"></i>
+                                    </span>
+                                     <span class = 'non-sale'>123.000.000 
+                                        <i class="far fa-money-bill-wave-alt"></i>
+                                     </span> <br/>
+                                </div>
+                                 <button class = "btn">Đặt phòng ngay</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img">
+                            <a href="">
+                                <img src="https://hotel-01.web4s.vn/uploads/plugin/tour/98/1548754923-1751849194-khach-s-n-c-u-gi-y-phong-suite.png" alt="" >
+                            </a>
+                        </div>
+                        <div class="contten">
+                            <h4>Khách sạn Cầu Giấy _ Phòng Suite</h4>
+                            <p>Phòng Suite diện tích 55m2 với trang thiết bị hiện đại, phòng thiết kế đẹp mắt,trang nhã,
+                                tinh tế, không gian thoáng mát,yên tĩnh sẽ đem lại sự tiện nghi và thoải mái tối đa cho
+                                quý khách dù là thời gian nghỉ ngơi thư giãn hay trong chuyến công tác. 
+                                quý khách dù là thời gian nghỉ ngơi thư giãn hay trong chuyến công tác.</p>
+                                <div class="wapper_price">
+                                    <span class = 'sale'> Giá: 120.000.000
+                                        <i class="far fa-money-bill-wave-alt"></i>
+                                    </span>
+                                     <span class = 'non-sale'>123.000.000 
+                                        <i class="far fa-money-bill-wave-alt"></i>
+                                     </span> <br/>
+                                </div>
+                                 <button class = "btn">Đặt phòng ngay</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+        <div id = 'items-room'>
+            <div class="room">
+                <ul class="room-header">
+                        <li class = 'items-include active'><a href="#tab-active1">Khách sạn</a> </li>
+                        <li class = 'items-include'><a href="#tab-active3">Nhà hàng</a> </li>
+                        <li class = 'items-include'><a href="#tab-active2">Hội trường</a> </li>
+                </ul>
+                <div class="room-conttent active-show" id = 'tab-active1'>
+                        <div class="img-room">
+                             <img src="https://hotel-01.web4s.vn/uploads/plugin/custom_img/2019-01-30/1548815545-1159874732-custom.jpg" alt="">
+                        </div>
+                        <div class="conttent">
+                            <h2>KHÁCH SẠN</h2>
+                            <p>Khách sạn Cầu Giấy nằm tại trung tâm hành chính quận Cầu Giấy - nơi
+                                 có rất nhiều trụ sở cơ quan nhà nước từ Trung ương đến các bộ ban ngành , các địa điểm du lịch,
+                                  trung tâm hội nghị Quốc gia , Bảo tàng…cách sân bay Nội Bài chỉ với 30 phút lái xe. Khách sạn đạt tiêu chuẩn 4 
+                                  sao với 88 phòng thiết kế sang trọng, cách bố trí vô cùng tinh tế, trang nhã, không gian thoáng mát, yên tĩnh 
+                                  sẽ đem lại sự tiện nghi và 
+                                thoải mái tối đa cho quý khách dù là thời gian nghỉ ngơi thư giãn hay trong chuyến công tác…</p>
+                        </div>
+                </div>
+                <div class="room-conttent" id = 'tab-active2'>
+                    <div class="img-room">
+                         <img src="https://hotel-01.web4s.vn/uploads/plugin/custom_img/2019-01-30/1548815566-2095029051-custom.jpg" alt="">
+                    </div>
+                    <div class="conttent">
+                        <h2>HỘI TRƯỜNG</h2>
+                        <p>
+                            Khách sạn bao gồm: 2 nhà hàng rộng rãi với 500 chỗ ngồi chuyên phục vụ nhu cầu ẩm thực đa dạng phong phú của quý
+                             khách; 5 phòng họp và phòng hội nghị có cơ sở vật chất hiện đại với sức chứa từ 25 đến 300 chỗ ngồi, bãi đỗ xe rộng rãi thuận
+                              tiện với diện tích 2500m2. Ngoài ra đội ngũ nhân viên được đào tạo chuyên nghiệp cùng hệ thống dịch vụ chất lượng cao sẽ giúp 
+                              quý khách tận hưởng và trải nghiệm những giây phút vô cùng ấm áp, thân thiện, vui vẻ trong những ngày du lịch, công tác tại Hà Nội
+                              . Được đón tiếp phục vụ và làm hài lòng quý khách là niềm vinh dự lớn đối với chúng tôi...</p>
+                    </div>
+            </div>
+            <div class="room-conttent" id = 'tab-active3'>
+                <div class="img-room">
+                     <img src="https://hotel-01.web4s.vn/uploads/plugin/custom_img/2019-01-30/1548809248-639350035-custom.png" alt="">
+                </div>
+                <div class="conttent">
+                    <h2>NHÀ HÀNG</h2>
+                    <p>Nhà hàng Sao Mai với đội ngũ đầu bếp tài hoa nhiều năm kinh nghiệm hệ thống nhà hàng được 
+                        chia ra nhiều khu vực sản xuất riêng biệt; bộ phận chuyên chế biến những món mang đậm nét dân tộc,
+                         giúp cho du khách có cơ hội thưởng thức những sản phẩm lạ ngon của mọi vùng miền của tổ quốc ngay tại nhà hàng 
+                         Sao Mai của chúng tôi, đội ngũ
+                         chuyên chế biến món ăn Âu Á đáp ứng nhu cầu của thực khách mong muốn thưởng thức hương vị mang đậm đà chất ngoại.</p>
+                </div>
+        </div>
+                
+            </div>
+        </div>
+        <div id="cark-items">
+            <div class="cark-main">
+                <div class="lop_phu ao"></div>
+                <div class="lop_phu ao2"></div>
+                <div class="cark-header">
+                    <h2>
+                        <i class="fal fa-book"></i> - Phòng hội nghị</h2>
+                </div>
+                <div class="cark-item">
+                    <div class="item2">
+                        <div class="img">
+                            <a href="">
+                                <img src="https://hotel-01.web4s.vn/uploads/plugin/news/36/1548811408-1671063392-khach-s-n-c-u-gi-y-kinh-nghi-m-i-thue-h-i-tr-ng.jpg" alt="" >
+                            </a>
+                            
+                        </div>
+                        <div class="contten">
+                            <h4>KHÁCH SẠN CẦU GIẤY - KINH NGHIỆM ĐI THUÊ HỘI TRƯỜNG</h4>
+                            <p>
+                                Bạn là người được đơn vị giao nhiệm vụ đi thuê hội trường tổ chức hội thảo, 
+                                tuy nhiên bạn không có bất cứ kiến thức..</p>
+                                 <button class = "btn btn_see_more">
+                                     <a href="">
+                                        See more...
+                                     </a>
+                                     </button>
+                        </div>
+                    </div>
+                    <div class="item2">
+                        <div class="img">
+                            <a href="">
+                                <img src="https://hotel-01.web4s.vn/uploads/plugin/news/35/1548811278-925419168-khach-s-n-c-u-gi-y-th-c-s-la-a-i-m-cho-thue-hoi-truong-uy-tin.png" alt="" >
+                            </a>
+                            
+                        </div>
+                        <div class="contten">
+                            <h4>KHÁCH SẠN CẦU GIẤY THỰC SỰ LÀ ĐỊA ĐIỂM, CHO THUE...</h4>
+                            <p>
+                                
+                                Tôi xin kể lại câu chuyện được một khách hàng chia sẻ, khi Anh ấy nhận nhiệm 
+                                vụ tìm địa điểm để thuê tổ chức buổi...</p>
+                                 <button class = "btn btn_see_more">
+                                     <a href="">
+                                        See more...
+                                     </a>
+                                     </button>
+                        </div>
+                    </div>
+                    <div class="item2">
+                        <div class="img">
+                            <a href="">
+                                <img src="https://hotel-01.web4s.vn/uploads/plugin/news/34/1548811175-2093675578-khach-s-n-c-u-gi-y-cho-thue-h-i-tr-ng.jpg" alt="" >
+                            </a>
+                        </div>
+                        <div class="contten">
+                            <h4>KHÁCH SẠN CẦU GIẤY, CHO THUÊ HỘI TRƯỜNG</h4>
+                            <p>
+                                Bạn đang tìm một địa điểm để tổ chức hội nghị, hội thảo trên địa bàn Hà Nội mà chưa biết tìm ở đâu...</p>
+                                 <button class = "btn btn_see_more">
+                                     <a href="">
+                                        See more...
+                                     </a>
+                                     </button>
+                        </div>
+                    </div>
+                    <div class="item2">
+                        <div class="img">
+                            <a href="">
+                                <img src="https://hotel-01.web4s.vn/uploads/plugin/custom_img/2019-01-30/1548809248-639350035-custom.png" alt="" >
+                            </a>
+                        </div>
+                        <div class="contten">
+                            <h4>CHO THUÊ PHÒNG HỌP HOÀN KIẾM</h4>
+                            <p>
+                                
+                                Chính vì vậy, là một trong những khách sạn tiên phong trong lĩnh vực
+                                 cho thuê phòng họp với hơn 20 năm kinh nghiệm....</p>
+                                 <button class = "btn btn_see_more">
+                                     <a href="">
+                                        See more...
+                                     </a>
+                                     </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+        <div id="cark-items">
+            <div class="cark-main">
+                <div class="lop_phu ao"></div>
+                <div class="lop_phu ao2"></div>
+                <div class="cark-header">
+                    <h2>
+                        <i class="fal fa-book"></i> -Nhà hàng</h2>
+                </div>
+                <div class="cark-item">
+                    <div class="item3">
+                        <div class="img">
+                            <a href="">
+                                <img src="https://hotel-01.web4s.vn/uploads/plugin/news/38/1548816943-1005216698-khach-s-n-c-u-gi-y-nha-hang-ha-n-i.png" alt="" >
+                            </a>
+                            
+                        </div>
+                        <div class="contten">
+                            <h4>KHÁCH SẠN CẦU GIẤY - NHÀ HÀNG HÀ NỘI</h4>
+                            <p>Nằm tại tầng 5 của khách sạn với cách bố trí vô cùng tinh tế và nhẹ nhàng. Bàn ghế cho đến chén dĩa...</p>
+                            <button class = "btn">Đặt phòng ngay</button>
+                        </div>
+                    </div>
+                    <div class="item3">
+                        <div class="img">
+                            <a href="">
+                                <img src="https://hotel-01.web4s.vn/uploads/plugin/news/37/1548816766-520747684-khach-s-n-c-u-gi-y-nha-hang-sao-mai.png" alt="" >
+                            </a>
+                            
+                        </div>
+                        <div class="contten">
+                            <h4>KHÁCH SẠN CẦU GIẤY, NHÀ HÀNG SAO MAI</h4>
+                            <p>Nhà hàng Sao Mai với đội ngũ đầu bếp tài hoa nhiều năm kinh nghiệm hệ  thống nhà hàng được chia ra nhiều khu vực sản...</p>
+                            <button class = "btn" >Đặt phòng ngay</button>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <div id="cark-items">
+            <div class="cark-main">
+                <div class="lop_phu ao"></div>
+                <div class="lop_phu ao2"></div>
+                <div class="cark-header">
+                    <h2>
+                        <i class="fal fa-book"></i> - Tour du lịch</h2>
+                </div>
+                <div class="cark-item">
+                    <div class="item4">
+                        <div class="img">
+                            <a href="">
+                                <img src="https://hotel-01.web4s.vn/uploads/plugin/tour/95/1546540625-946404167-du-l-ch-v-nh-h-long-tau-4-sao-royal-place.jpg" alt="" >
+                            </a>
+                            
+                        </div>
+                        <div class="contten">
+                            <h4> DU LỊCH VỊNH HẠ LONG - TÀU 4 SAO ROYAL PLACE</h4>
+                            <p>
+                               2 Ngày - 1 Đêm<br>
+                                Khởi hành: Liên hệ</p>
+                                <div class="wapper_price  du_lich">
+                                    <span class = 'sale'> Giá: 120.000.000
+                                        <i class="far fa-money-bill-wave-alt"></i>
+                                    </span>
+                                     <span class = 'non-sale'>123.000.000 
+                                        <i class="far fa-money-bill-wave-alt"></i>
+                                     </span> <br/>
+                                </div>
+                                 <button class = "btn">Đặt phòng ngay</button>
+                        </div>
+                    </div>
+                    <div class="item4">
+                        <div class="img">
+                            <a href="">
+                                <img src="https://hotel-01.web4s.vn/uploads/plugin/tour/91/1546523236-846171732-tour-du-l-ch-anh-qu-c-2019-london-stradford-oxford-cambridge.jpg" alt="" >
+                            </a>
+                            
+                        </div>
+                        <div class="contten">
+                            <h4>TOUR DU LỊCH ANH QUỐC 2019: LONDON - STRADFORD - OXFORD -...</h4>
+                            <p>
+                                
+                                6 Ngày - 5 Đêm<br>
+                                
+                                Khởi hành: 21/03/2019 & 16/04/2019</p>
+                                <div class="wapper_price du_lich">
+                                    <span class = 'sale'> Giá: 120.000.000
+                                        <i class="far fa-money-bill-wave-alt"></i>
+                                    </span>
+                                     <span class = 'non-sale'>123.000.000 
+                                        <i class="far fa-money-bill-wave-alt"></i>
+                                     </span> <br/>
+                                </div>
+                                 <button class = "btn">Đặt phòng ngay</button>
+                        </div>
+                    </div>
+                    <div class="item4">
+                        <div class="img">
+                            <a href="">
+                                <img src="https://hotel-01.web4s.vn/uploads/plugin/tour/52/l-ng-s-n-a-l-t-nha-trang-nha-trang-0.jpg" alt="" >
+                            </a>
+                        </div>
+                        <div class="contten">
+                            <h4>LẠNG SƠN - ĐÀ LẠT - NHA TRANG</h4>
+                            <p>
+                                7 Ngày - 6 Đêm<br>
+                                
+                                Khởi hành: 21/03/2021 & 18/05/2022</p>
+                                <div class="wapper_price du_lich">
+                                    <span class = 'sale'> Giá: 120.000.000
+                                        <i class="far fa-money-bill-wave-alt"></i>
+                                    </span>
+                                     <span class = 'non-sale'>123.000.000 
+                                        <i class="far fa-money-bill-wave-alt"></i>
+                                     </span> <br/>
+                                </div>
+                                 <button class = "btn">Đặt phòng ngay</button>
+                        </div>
+                    </div>
+                    <div class="item4">
+                        <div class="img">
+                            <a href="">
+                                <img src="https://hotel-01.web4s.vn/uploads/plugin/tour/41/ha-n-i-ndash-ng-thien-thai-ndash-mai-chau-ndash-m-c-chau-mai-chau-1-0.jpg" alt="" >
+                            </a>
+                        </div>
+                        <div class="contten">
+                            <h4>HÀ NỘI – ĐỘNG THIÊN THAI – MAI CHÂU – MỘC CHÂU</h4>
+                            <p>                  
+                                Ngỡ Ngàng Trước Vẻ Đẹp Thơ Mộng, Hùng Vĩ Của Vùng Cao Nguyên Với Tour Mai Châu </p>
+                                <div class="wapper_price du_lich">
+                                    <span class = 'sale'> Giá: 120.000.000
+                                        <i class="far fa-money-bill-wave-alt"></i>
+                                    </span>
+                                     <span class = 'non-sale'>123.000.000 
+                                        <i class="far fa-money-bill-wave-alt"></i>
+                                     </span> <br/>
+                                </div>
+                                 <button class = "btn">Đặt phòng ngay</button>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+        <div id="if-boot">
+            <div class="if-bt">
+                <div class="introduce">
+                    <div class="title">
+                        <h2>Giới thiệu </h2>
+                    </div>
+                    <div class="itr">
+                        <p>Khách sạn Cầu Giấy nằm tại trung tâm hành chính quận Cầu Giấy - nơi có rất nhiều trụ sở 
+                            cơ quan nhà nước từ Trung ương đến các bộ ban ngành , các địa điểm du lịch, trung tâm hội nghị 
+                            Quốc gia , Bảo tàng…cách sân bay Nội Bài chỉ với 30 phút lái xe. Khách sạn đạt tiêu chuẩn 4 sao với 88
+                             phòng thiết kế sang trọng, cách bố trí vô cùng tinh tế, trang nhã, không gian thoáng mát, yên tĩnh sẽ đem
+                             lại sự tiện nghi và thoải mái tối đa cho quý khách dù là thời gian nghỉ ngơi thư giãn hay trong chuyến công tác
+                          </p>
+                          <a href="">Xem thêm 
+                              <i class = 'fa fa-angle-double-right'></i>
+                          </a>
+                    </div>
+                      
+                </div>
+                <div class="if-customer">
+                    
+                        <div class = 'title'>
+                            <h2>Liên hệ</h2>
+                        </div>
+                        <form class="itr">
+                            <input type="text" placeholder = 'Họ và tên'>
+                            <input type="email" placeholder = 'Email' required>
+                            <input type="phone" placeholder = 'Số điện thoại'>
+                            <input type="text" placeholder = 'Tiêu đề'>
+                            <input type="text" placeholder = "Your messsage" class = 'noidung'>
+                            <button> Gửi yêu cầu</button>
+        
+                        </form>
+                    
+    
+                </div>
+            </div>
+       
+        </div>
+        <div id = 'choice-customer'>
+            <div class="header-ao">
+                <div class="lop_phu ao"></div>
+                <div class="lop_phu ao2"></div>
+                <div class="cark-header">
+                    <h2><i class="fal fa-book"></i> - Cẩm nang lựa chọn</h2>
+                </div>
+            </div>
+            <div class="container-cus">
+                <div class="cus-img">
+                    <div class="sum">
+                           <div class="chance  main" id = 'start-chance1'>
+                            <img src="https://hotel-01.web4s.vn/uploads/plugin/news/30/1548753752-765578032-khach-s-n-c-u-gi-y-v-tri-c-a-qu-n-c-u-gi-y.png" alt="">
+                            <div class="thongtin">
+                                <h2>Khách sạn Cầu Giấy - vị trí đắc địa quận Cầu Giấy </h2>
+                                <p>Khách sạn Cầu Giấy nằm trên trục đường Cầu Giấy, con đường huyết mạch của quận nói riêng và Hà
+                                     Nội nói chung, quận Cầu Giấy được đánh giá “Địa linh nhân kiệt, đất lành chim đậu”, có rất
+                                      nhiều học viện, trường đại học, 
+                                    cao đẳng đến các bộ, ban, ngành, công ty, tổng công ty lớn đặt trụ sở trên địa
+                                </p>
+                            </div>
+                           </div>
+                           <div class="chance" id = 'start-chance2'>
+                            <img src="https://hotel-01.web4s.vn/uploads/plugin/news/31/1548753683-716919821-khach-s-n-c-u-gi-y-khach-s-n-qu-n-c-u-gi-y.png" alt="">
+                            <div class="thongtin">
+                                <h2>Khách sạn Cầu Giấy, khách sạn ở quận Cầu Giấy.</h2>
+                                <p>Khách sạn Cầu Giấy nằm trên trục đường Cầu Giấy, con đường huyết mạch của quận nói 
+                                    riêng và Hà Nội nói chung, quận Cầu Giấy được đánh giá “Địa linh nhân kiệt, đất lành 
+                                    chim đậu”, có rất nhiều học viện, trường đại học, cao đẳng đến các bộ, ban, ngành, công ty,
+                                     tổng công ty lớn đặt trụ sở trên địa
+
+
+                                </p>
+                            </div>
+                           </div>
+                           <div class="chance" id = 'start-chance3'>
+                            <img src="https://hotel-01.web4s.vn/uploads/plugin/news/29/1548753382-1784186242-khach-s-n-c-u-gi-y-ha-n-i-book-phong-khach-s-n.png" alt="">
+                            <div class="thongtin">
+                                <h2>Khách sạn Cầu Giấy Hà Nội - book phòng khách sạn</h2>
+                                <p>Hiện nay nhu cầu dùng internet không thể thiếu đối với xã hội hiện đại  nhưng số đông sử dụng để trò
+                                     chuyện, giải trí, lướt web, đọc tin tức, chát với bạn bè,… Lượng người áp dụng vào công việc thì chưa
+                                      cao. Trong khi đó nguồn thông tin hữu ích do internet mang lại là vô cùng lớn. Đặc biệt dùng để &
+                                </p>
+                            </div>
+                           </div>
+                           <div class="chance" id = 'start-chance4'>
+                            <img src="https://hotel-01.web4s.vn/uploads/plugin/news/3/nh-ng-c-s-n-hi-m-co-kho-tim-quy-nh-n-dn3-0.jpeg" alt="">
+                            <div class="thongtin">
+                                <h2>Những đặc sản hiếm có, khó tìm ở Quy Nhơn</h2>
+                                <p>Bò bọ biển có cùng họ với tôm, con nào con nấy tròn trùng trục và
+                                     khoác lên mình lớp áo giáp nâu láng bóng. Loài này có thân hình giống như con phóng to,
+                                      thêm vào đó là hai hàng chân dày đặc cùng móng vuốt sắc nhọn.
+                                </p>
+                            </div>
+                           </div>
+                           <div class="chance" id = 'start-chance5'>
+                            <img src="https://hotel-01.web4s.vn/uploads/plugin/news/28/1548753153-1228300782-khach-s-n-c-u-gi-y-ha-n-i-110-c-u-gi-y-ndash-t-phong-gia-r.png" alt="">
+                            <div class="thongtin">
+                                <h2>Khách sạn Cầu Giấy Hà Nội - 110 Cầu Giấy – đặt phòng giá rẻ</h2>
+                                <p>Hình ảnh khách sạn Cầu Giấy cũ năm 1996 đến 2016 tổng cộng có 65 phòng gồm 2 khu “tòa chính có 56 phòng,
+                                     khu biệt thự có 9 phòng”. Sau nhiều năm hoạt động phục vụ hàng ngàn khách hàng trong và ngoài nước. Đến 
+                                     cuối năm 2016 công ty đã đầu tư dự án xây dựng khách sạn mới với quy m&a
+                                </p>
+                            </div>
+                           </div>
+                    </div>
+                     
+                </div>
+                <div class="if">
+                    <div> <h3 class = 'chuyendoi hover1'><a href="#start-chance1">Khách sạn Cầu Giấy - vị trí đắc địa quận Cầu Giấy</a> </h3></div>
+                    <div> <h3 class = 'chuyendoi'><a href="#start-chance2">Khách sạn Cầu Giấy, khách sạn ở quận Cầu Giấy.</a> </h3></div>
+                    <div> <h3 class = 'chuyendoi'><a href="#start-chance3">Khách sạn Cầu Giấy Hà Nội - book phòng khách sạn.</a> </h3></div>
+                    <div> <h3 class = 'chuyendoi'><a href="#start-chance4">Những đặc sản hiếm có, khó tìm ở Quy Nhơn</a> </h3></div>
+                    <div> <h3 class = 'chuyendoi'><a href="#start-chance5">Khách sạn Cầu Giấy Hà Nội - 110 Cầu Giấy – đặt phòng giá rẻ.</a> </h3></div>
+                   
+                </div>
+            </div>
+               
+        </div>
+        <div id="map">
+            <div class="map-item">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.058051849442!2d105.7294215493718!3d10.01206377554076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0882139720a77%3A0x3916a227d0b95a64!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBGUFQgQ-G6p24gVGjGoQ!5e0!3m2!1svi!2s!4v1633196343689!5m2!1svi!2s" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            
+        </div>
+        <div id="footer">
+            <div class="footer-items">
+                <div class="footer-item1">
+                     <h4>Về chúng tôi</h4>
+                     <p>CÔNG TY TNHH MTV ĐẦU TƯ THƯƠNG MAI VÀ DU LỊCH SAO MAI</p>
+                     <div class = 'dif'>
+                         <p>
+                            <i class="far fa-map-marker-alt"></i>
+                            32 Võ Văn Dũng, Đống Đa, Hà Nội
+                         </p>
+                         <p>
+                            <i class="far fa-phone"></i>
+                             19002116
+                         </p>
+                         <p>
+                            <i class="far fa-phone"></i>
+                            (04) 7308 6680
+                         </p>
+                         <p>
+                            <i class="fal fa-envelope"></i>
+                            letankim2003@gmail.com
+                         </p>
+                     </div>
+                </div>
+                <div class="footer-item2">
+                    <h4>Phòng hot nhất</h4>
+                    <div class="dif">
+                        <p>
+                            Phòng ngủ
+                        </p>
+                        <p>
+                            Phòng hội nghị
+                        </p>
+                        <p>
+                            Nhà hàng
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-item3">
+                    <h4>Hỗ trợ</h4>
+                    <div class="dif">
+                       <p>FAQs - Hỏi đáp</p>
+                       <p>Các quy định - Điều khoản</p>
+                       <p>Hướng dẫn thanh toán</p>
+                       <p>Phương Thức Thanh Toán</p>
+                    </div>
+                </div>
+                <div class="footer-item4">
+                    <h4>Kết nối</h4>
+                    <div class = dif>
+                        <a href="">
+                            <div class="layer">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class = 'fab fa-facebook-f'></span>
+                            </div>
+                            <div class="text">Facebook</div>
+                        </a>
+                        <a href="">
+                            <div class="layer">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class = 'fab fa-twitter'></span>
+                            </div>
+                            <div class="text">Twitter</div>
+                        </a>
+                        <a href="">
+                            <div class="layer">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class = 'fab fa-instagram'></span>
+                            </div>
+                            <div class="text">Instagram</div>
+                        </a>
+                        <a href="">
+                            <div class="layer">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class = 'fab fa-linkedin-in'></span>
+                            </div>
+                            <div class="text">Linkedin</div>
+                        </a>
+                        <a href="">
+                            <div class="layer">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class = 'fab fa-youtube'></span>
+                            </div>
+                            <div class="text">Youtube</div>
+                        </a>
+                    </div>
+                    <div class="bct">
+                        <img src="https://hotel-01.web4s.vn/uploads/plugin/custom_img/2018-03-16/custom-testsen.png" alt="">
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <div id="copy">
+             <p>Copyright by letankim2003</p>
+        </div>
+        <div id="back-top">
+            <div class="top">
+                <i class="fas fa-arrow-alt-to-top"></i>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</html>
