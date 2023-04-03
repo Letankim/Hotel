@@ -21,8 +21,8 @@ body {
     width: 100%;
     height: 48px;
     background-color: #ce0505;
-    position: relative;
     z-index: 1;
+    position: relative;
 }
 
 #wrapper #main-menu .menu-items {
