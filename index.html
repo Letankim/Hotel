@@ -90,37 +90,38 @@
             <i class="far fa-angle-right slide-next slide_control"></i>
         </div>
         <div id="menu-order">
-            <table  cellpadding = 0>
-                <caption >PHIẾU ORDER PHÒNG</caption>
-                <tr class = 'bg'>
-                    <th>Họ và tên</th>
-                    <th>Số đt</th>
-                </tr>
-                <tr>
-                   <td><input type="text" placeholder="Họ Và Tên"></td> 
-                    <td><input type="text" placeholder="Số điện thoại" required></td>
-                </tr>
-                <tr class = 'bg'>
-                    <th>Ngày đi</th>
-                    <th>Ngày về</th>
-                </tr>
-                <tr>
-                    <td ><input type="date" placeholder="Ngày đi" required></td>
-                     <td><input type="date" placeholder="Ngày về" required></td>
-                </tr>
-                <tr >
-                    <td colspan="2">
-                    <select name="" id="">
-                        <option value="Phòng superios">Phòng superios</option>
-                        <option value="Phòng deluxe">Phòng deluxe</option>
-                        <option value="Phòng suite">Phòng suite</option>
-                    </select>
-                   </td>
-                </tr> 
-                <tr>
-                    <th colspan = "2"><button>Gửi yêu cầu</button> </th>
-                </tr>       
-            </table>
+            <div class="wapper_order">
+                <h2>Phiếu order phòng</h2>
+                <div class="infor_order">
+                    <div class="box_order_infor">
+                        <h3 class="title_order_infor">Họ tên</h3>
+                        <input type="text" class="input_order_infor" placeholder="Tên">
+                    </div>
+                    <div class="box_order_infor">
+                        <h3 class="title_order_infor">Số điện thoại</h3>
+                        <input type="text" class="input_order_infor" placeholder="STĐ">
+                    </div>
+                    <div class="box_order_infor">
+                        <h3 class="title_order_infor">Ngày đi</h3>
+                        <input type="date" class="input_order_infor" placeholder="Ngày đi">
+                    </div>
+                    <div class="box_order_infor">
+                        <h3 class="title_order_infor">Ngày về</h3>
+                        <input type="date" class="input_order_infor" placeholder="Ngày về">
+                    </div>
+                    <div class="box_order_infor type_room">
+                        <h3 class="title_order_infor">Loại phòng</h3>
+                        <select name="" id="">
+                            <option value="Phòng superios">Phòng superios</option>
+                            <option value="Phòng deluxe">Phòng deluxe</option>
+                            <option value="Phòng suite">Phòng suite</option>
+                        </select>
+                    </div>
+                    <div class="box_submit">
+                        <button>Gửi yêu cầu</button>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="cark-items">
             <div class="cark-main">

@@ -22,6 +22,7 @@ body {
     height: 48px;
     background-color: #ce0505;
     z-index: 1;
+    position: relative;
 }
 
 #wrapper #main-menu .menu-items {
@@ -183,71 +184,76 @@ body {
 /* het slide */
 
 /* dặt phong */
-#wrapper #menu-order {
-    margin: 20px 300px;
+#wrapper{
+    width: 100%;
+    overflow: hidden;
+    margin: 20px auto;
 }
-
-#wrapper #menu-order table {
-    border: #e8e2e2;
+.wapper_order {
+    margin: 30px auto;
     width: 800px;
-    padding: 5px;
+    border: #e8e2e2;
+    padding: 10px;
     background-color: #dadadd;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
 }
-
-#wrapper #menu-order table caption {
+.wapper_order h2 {
+    text-align: center;
     padding: 15px 0px;
     font-size: 30px;
+    margin: unset;
     font-weight: bold;
 }
-
-#wrapper #menu-order table tr td select option {
-    background-color: rgb(243, 239, 239);
+.infor_order {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
 }
-
-#wrapper #menu-order table .bg th{
+.box_order_infor {
+    flex: 1 0 calc(50% - 2.5px);
+}
+.title_order_infor {
     text-transform: capitalize;
     background-color: #c85c5c;
+    text-align: center;
     color: #fff;
     font-weight: bold;
     font-size: 15px;
     padding: 10px 5px;
+    margin: unset;
 }
-
-#wrapper #menu-order input {
+.infor_order select option {
+    background-color: rgb(243, 239, 239);
+}
+.input_order_infor {
     outline: none;
     border: none;
     padding: 10px;
     width: 100%;
     box-sizing: border-box;
 }
-
-#wrapper #menu-order input::placeholder {
-    color: #878686;
-    font-size: 12px;
-  }
-
-#wrapper #menu-order select{
-   font-size: 16px;
-   font-weight: bold;
-   border: none;
-   color: #878686;
-   padding: 10px;
-   outline: none;
-   cursor: pointer;
-}
-
-#wrapper #menu-order select option {
-    background-color: rgb(126, 113, 113);
-    color:#474646;
-    font-weight: bold;
-    font-size: 15px;
+.box_order_infor select {
+    padding: 10px 20px;
+    margin-top: 3px;
     cursor: pointer;
 }
+.box_order_infor.type_room {
+    max-width: 50%;
+}
+.input_order_infor::placeholder {
+    color: #878686;
+    font-size: 12px;
+}
+.box_submit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
-#wrapper #menu-order button {
-    width: 250px;
-    margin: 8px 360px;
-    padding: 10px;
+#wrapper .box_submit button {
+    padding: 10px 30px;
     background-color: #499770;
     outline: none;
     border: none;

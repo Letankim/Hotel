@@ -91,22 +91,16 @@
         padding: unset;
     }
     /* order */
-    #wrapper #menu-order {
-        width: 100%;
-        padding: 0px 20px;
+    #wrapper .wapper_order {
+        width: calc(100% - 20px);
         margin: 20px auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         
     }
-    #wrapper #menu-order table {
-        width: 400px;
-        margin: 0px auto;
-        overflow: hidden;
+    #wrapper .wapper_order .infor_order {
+        width: 100%;
     }
-    #wrapper #menu-order table .bg th {
-        width: 100px !important;
+    .box_order_infor {
+        flex: 1 0 100%;
     }
     /* card */
     #cark-items {
